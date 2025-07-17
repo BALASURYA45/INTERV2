@@ -6,4 +6,4 @@ const SessionWrapper = ({ children}) => {
                 {children}
         </SessionProvider>
 };
-export default SessionProvider;
+export default SessionWrapper;
