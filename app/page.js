@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import { signIn, useSession, signOut} from "next-auth/react"
 import './globals.css'
+import Navbar from "@/component/Navbar";
 
 export default function Home(){
   const{data:session}=useSession();
@@ -16,6 +17,7 @@ export default function Home(){
   }
   return (
     <div className={styles.page}>
+      <Navbar/>
       <p>You are not signed in.</p>
       <button onClick={()=>signIn()}>Sign In</button>
     </div>
