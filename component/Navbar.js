@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useSession, signIn, signOut } from 'next-auth/react';
-import styles from './Navbar.css';
+import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const { data: session } = useSession();
